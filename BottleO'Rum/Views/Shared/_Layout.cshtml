@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Bottle O' Rum", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home", new {area = ""}, null)</li>
+
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Solution 1", "Index", "ScaTreasureCalculator", new {area = ""}, null)</li>
+
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Solution 2", "Index", "TreasureCalculator", new { area = "" }, null)</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="ajaxLoader">
+        <img src="~/Content/images/ajax-loader.gif" class="ajax-loader" />
+    </div>
+    @RenderBody()
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Bottle O' Rum</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery") 
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+   <script src="~/app/common/common.js"></script>
+   
+    <script src="~/app/app.js"></script>
+    @RenderSection("scripts", required: false)
+    <script type='text/javascript'>
+    $('#ajaxLoader').hide();
+    </script>
+
+</body>
+</html>
+

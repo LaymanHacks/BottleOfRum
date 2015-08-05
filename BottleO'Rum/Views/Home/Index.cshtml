@@ -1,0 +1,69 @@
+﻿<div ng-controller="homeIndexCtrl as vm">
+    <carousel interval="vm.myInterval" no-wrap="vm.noWrapSlides">
+        <slide ng-repeat="slide in vm.slides" active="slide.active">
+            <img ng-src="{{slide.image}}">
+        </slide>
+    </carousel>
+
+   <div class="container body-content">
+
+        <div>
+            <h2><i class="glyphicon glyphicon-info-sign"></i> The problem </h2>
+            <div class="well">
+                <p>
+                    <i class="glyphicon glyphicon-usd"></i>
+                    A few pirates find a treasure chest full of gold coins late one evening.
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-time"></i>
+                    They decide to wait until the next morning to divide their treasure.
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-warning-sign"></i>
+                    One of the pirates wakes up in the middle of the night worried that the other
+                    pirates will steal his booty so he decides to go divide the treasure himself.
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                    He divides it into equal shares (one for each pirate).  There is one coin
+                    left over, which he throws overboard (anything else would be unfair).  He
+                    takes his share, puts the other shares back in the chest, and returns to his
+                    cabin.
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-user"></i>
+                    Another pirate wakes up and does the same thing.  Yes, there is
+                    still one extra coin.  Yes, he throws that coin overboard.
+                </p>
+                <p>
+                    <i class="glyphicon glyphicon-user"></i>...<i class="glyphicon glyphicon-user"></i>
+                    Each pirate does this once during the night <small>
+                        (yes, there is an extra
+                        coin and they throw it overboard each time)
+                    </small>, and the next morning
+                    they wake up and divide the treasure into equal shares.  There is one left
+                    over which they throw overboard.  They each take their share and live
+                    happily ever after.
+                </p>
+            </div>
+            <h2><i class="glyphicon glyphicon-question-sign"></i> The question</h2>
+            <div class="well">
+                <p class="lead">
+                    Given the number of pirates, what is the smallest number of coins that could have been in the treasure chest originally?
+                </p>
+                @Html.ActionLink("Solution 1", "Index", "ScaTreasureCalculator", new { area = "" }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Solution 2", "Index", "treasureCalculator", new { area = "" }, new { @class = "btn btn-default" })
+            
+                
+            </div>
+        </div>
+
+
+        <hr />
+
+    </div>
+</div>
+@section Scripts {
+ <script src="~/app/home/index.js"></script> 
+
+}
