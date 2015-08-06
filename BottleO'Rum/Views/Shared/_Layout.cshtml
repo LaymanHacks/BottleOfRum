@@ -50,9 +50,11 @@
 
 
    <script src="~/app/common/common.js"></script>
-   
+
     <script src="~/app/app.js"></script>
-    @RenderSection("scripts", required: false)
+    <script src="~/app/common/directives/onlyDigits.js"></script>
+
+@RenderSection("scripts", required: false)
     <script type='text/javascript'>
     $('#ajaxLoader').hide();
     </script>

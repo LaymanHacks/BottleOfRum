@@ -148,6 +148,7 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\common\common.js" />
+    <Content Include="app\common\directives\onlyDigits.js" />
     <Content Include="app\home\index.js" />
     <Content Include="app\scaTreasureCalculator\index.js" />
     <Content Include="app\services\scaDataService.js" />
