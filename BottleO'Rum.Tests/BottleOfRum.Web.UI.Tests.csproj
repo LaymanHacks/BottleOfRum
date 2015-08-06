@@ -103,6 +103,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\api\TreasureControllerTests.cs" />
+    <Compile Include="Controllers\api\TreasureControllerTreasureCalculatorCheatIntegrationTests.cs" />
+    <Compile Include="Controllers\api\TreasureControllerTreasureCalculatorIntegrationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
