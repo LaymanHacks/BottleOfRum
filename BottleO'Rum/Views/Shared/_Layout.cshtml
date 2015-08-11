@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html data-ng-app="app">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -28,37 +28,35 @@
 
             </ul>
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Solution 2", "Index", "TreasureCalculator", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Solution 2", "Index", "TreasureCalculator", new {area = ""}, null)</li>
 
             </ul>
         </div>
     </div>
 </div>
-    <div id="ajaxLoader">
-        <img src="~/Content/images/ajax-loader.gif" class="ajax-loader" />
-    </div>
-    @RenderBody()
-    <div class="container body-content">
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Bottle O' Rum</p>
-        </footer>
-    </div>
-    @Scripts.Render("~/bundles/jquery") 
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/bootstrap")
+<div id="ajaxLoader">
+    <img src="~/Content/images/ajax-loader.gif" class="ajax-loader"/>
+</div>
+@RenderBody()
+<div class="container body-content">
+    <hr/>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Bottle O' Rum</p>
+    </footer>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/angular")
+@Scripts.Render("~/bundles/bootstrap")
 
 
-   <script src="~/app/common/common.js"></script>
+<script src="~/app/app.js"></script>
+<script src="~/app/common/common.js"></script>
+<script src="~/app/common/directives/onlyDigits.js"></script>
 
-    <script src="~/app/app.js"></script>
-    <script src="~/app/common/directives/onlyDigits.js"></script>
-
-@RenderSection("scripts", required: false)
-    <script type='text/javascript'>
+@RenderSection("scripts", false)
+<script type="text/javascript">
     $('#ajaxLoader').hide();
-    </script>
+</script>
 
 </body>
 </html>
-
