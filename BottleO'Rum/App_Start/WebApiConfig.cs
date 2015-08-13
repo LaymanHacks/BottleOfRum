@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using BottleOfRum.Web.Formatter;
 
 namespace BottleOfRum.Web.UI
 {
@@ -10,7 +11,7 @@ namespace BottleOfRum.Web.UI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.Formatters.Add(new BrowserJsonFormatter());
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

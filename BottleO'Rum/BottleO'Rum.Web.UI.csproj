@@ -42,6 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SimpleInjector, Version=2.8.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.2.8.3\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
@@ -72,9 +76,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
@@ -235,6 +236,10 @@
     <ProjectReference Include="..\BottleOfRum.Business\BottleOfRum.Business.csproj">
       <Project>{F192E64B-26CB-4D70-8C44-5CD35FEEF80D}</Project>
       <Name>BottleOfRum.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BottleOfRum.Web\BottleOfRum.Web.csproj">
+      <Project>{A4122D70-0D3D-45EA-B194-38AF2E2D77D2}</Project>
+      <Name>BottleOfRum.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
