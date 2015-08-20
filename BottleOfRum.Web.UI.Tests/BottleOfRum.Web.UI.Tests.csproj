@@ -115,7 +115,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BottleO%27Rum\BottleO%27Rum.Web.UI.csproj">
+    <ProjectReference Include="..\BottleOfRum.Web.UI\BottleOfRum.Web.UI.csproj">
       <Project>{E6A7C3AF-AB78-4CD8-A5EA-5A9E5D4BF97D}</Project>
       <Name>BottleO%27Rum.Web.UI</Name>
     </ProjectReference>
